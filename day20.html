@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            day20
+        </title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+          .effects{
+            width: 100px;
+            height: 150px;
+            background-color: rgb(107, 129, 122);
+            display: flex;
+               align-items: center;
+                justify-content: center;
+                transition: all 5s ease-out ;
+             }
+          .effects:hover{
+             background-color: rgb(129, 79, 79);
+            transform: translate(200px 200px) scale(2);
+           
+            
+            }
+            .effects1{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                background-color: blueviolet;
+                color: antiquewhite;
+                display: flex;
+               align-items: center;
+                justify-content: center;
+            }
+            .effects1:hover{
+                background-color: rgb(72, 60, 83);
+                color: aliceblue;
+                transition: all 3s ease-in;
+                transform: scale(2);
+            }
+            .effects2{
+                width: 200px;
+                height: 200px;
+                background-color: chocolate;
+                display: flex;
+               align-items: center;
+                justify-content: center;
+
+            }
+            .effects2:hover{
+                background-color: aquamarine;
+                color: cadetblue;
+                transition: all 2s ease 2s;
+                transform: rotate(360deg);
+            }
+            img{
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+            }
+            #imageineffects:hover{
+                     transition: all 2s ease 2s;
+                     transform: rotate(200deg);
+            }
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div class="effects">1</div>
+        <br>
+        <div class="effects1">2</div>
+        <div class="effects2">3</div>
+        <br><br>
+
+        <img id="imageineffects" src="./assets/images/pic3.jpg">
+    </body>
+</html>

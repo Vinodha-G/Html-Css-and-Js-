@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            background-color: bisque;
+            padding: 7px;
+            gap: 6px;
+            grid-template-areas:
+                'head head head'
+                'body2 body2 body2'
+                'body1 body1 final'
+            ;
+        }
+
+        .grid-item {
+            padding: 10px;
+            background-color: blueviolet;
+            text-align: center;
+            color: aliceblue;
+
+        }
+
+        .box1 {
+            grid-area: head;
+        }
+
+        .box2 {
+            grid-area: body1;
+        }
+
+        .box3 {
+            grid-area: body2;
+        }
+
+        .box4 {
+            grid-area: final;
+        }
+
+        input:checked {
+            width: 50px;
+            height: 50px;
+        }
+        p:first-child{
+            background-color: rgb(212, 0, 0);
+        }
+        p:nth-child(3){
+            background-color: aquamarine;
+        }
+        div:only-child{
+            color: rgb(22, 34, 192);
+        }
+        li:first-child{
+            color: rgb(168, 64, 64);
+        }
+        p::first-line{
+            color: aquamarine;
+        }
+        p::selection{
+            color: blueviolet;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item box1">1</div>
+        <div class="grid-item box2">2</div>
+        <div class="grid-item box3">3</div>
+        <div class="grid-item box4">4</div>
+    </div>
+    
+    <input class="checkbox1" type="checkbox" />
+    <ol>
+        <li class="list1">hello</li>
+        <li class="list2">hello</li>
+        <li class="list3">hello</li>
+        <li class="list4">hello</li>
+        
+    </ol>
+
+    <div class="firstdiv">
+        <p class="paragraph1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae at fuga soluta
+            delectus
+            officiis dolores consectetur cum magni exercitationem quas.</p>
+        <p class="paragraph2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis inventore sapiente
+            praesentium. Blanditiis, natus labore voluptates quod sint eos dignissimos debitis impedit totam incidunt
+            doloremque tempora maxime temporibus dolorem commodi? </p>
+    </div>
+    <div >
+        <p class="paragraph1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae at fuga soluta
+            delectus
+            officiis dolores consectetur cum magni exercitationem quas.</p>
+        </div>
+    <div class="seconddiv">
+        <p class="paragraph11">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae at fuga soluta
+            delectus
+            officiis dolores consectetur cum magni exercitationem quas.</p>
+        <p class="paragraph21">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis inventore sapiente
+            praesentium. Blanditiis, natus labore voluptates quod sint eos dignissimos debitis impedit totam incidunt
+            doloremque tempora maxime temporibus dolorem commodi? </p>
+            <p class="paragraph31">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis inventore sapiente
+                praesentium. Blanditiis, natus labore voluptates quod sint eos dignissimos debitis impedit totam incidunt
+                doloremque tempora maxime temporibus dolorem commodi? </p>
+                <p class="paragraph41">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis inventore sapiente
+                    praesentium. Blanditiis, natus labore voluptates quod sint eos dignissimos debitis impedit totam incidunt
+                    doloremque tempora maxime temporibus dolorem commodi? </p>
+    </div>
+    <div class="thirddiv">
+        <p class="paragraph10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae at fuga soluta
+            delectus
+            officiis dolores consectetur cum magni exercitationem quas.</p>
+        <p class="paragraph20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis inventore sapiente
+            praesentium. Blanditiis, natus labore voluptates quod sint eos dignissimos debitis impedit totam incidunt
+            doloremque tempora maxime temporibus dolorem commodi? </p>
+    </div>
+
+
+
+</body>
+
+</html>

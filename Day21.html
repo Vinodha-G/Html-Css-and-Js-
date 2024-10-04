@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+   
+    <title>
+
+    </title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        header{
+            padding: 20px;
+        }
+        .card-design{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-parent{
+            width: 300px;
+            height: 450px;
+            background-color: rgb(235, 211, 182);
+            border-radius: 5px;
+            position: relative;
+            border: 1px solid rgb(150, 119, 107);
+            padding-top: 30px;
+            overflow: hidden;
+            transition: all 1s ease ;
+        }
+        .card-parent:hover{
+            
+           transform:   scale(1.1);
+           box-shadow: 6px 6px 27px 7px rgb(218, 210, 218);
+           
+        }
+        .card-title {
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+            color: rgb(206, 102, 64);
+            position: absolute;
+            top: 10%;
+            left: 35%;
+            
+        }
+        .card-price {
+            text-align: center;
+            padding: 5px;
+          font-size: 50px;
+          position: absolute;
+          top: 18%;
+          left: 32%;
+          
+        }
+        .card-text {
+            text-align: center;
+            padding: 5px;
+            position: absolute;
+            top: 32%;
+            left: 15%;
+        }
+        .card-button{
+            width: 180px;
+            height: 35px;
+            background-color: rgb(206, 96, 56);
+           
+            border-radius: 20px;
+           
+            position: absolute;
+           left: 25%;
+           top: 85%;
+           
+        }
+        .card-button-text{
+            position: absolute;
+            left: 32%;
+           top: 85%;
+           font-size: 20px;
+           padding: 5px;
+           
+           color: aliceblue;
+          
+        }
+        ul{
+            list-style: none;
+            position: absolute;
+            top: 40%;
+            left: 10%;
+        }
+        .icons{
+             font-size: 30px;
+             position: absolute;
+             left: 10px;
+            padding-right: 20px;
+            color: rgb(216, 86, 38);
+             }
+
+             .icons:hover{
+                color: rgb(21, 54, 43);
+             }
+        li{
+            font-size: 20px;
+            
+        }
+        .card-tag{
+            background-color: rgb(247, 152, 10);
+            width: 60%;
+            height: 5%;
+            display: flex;
+            color:rgb(253, 253, 253);
+            justify-content: center;
+          
+            padding-top: 2%;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 6%;
+            left: 55%;
+            box-shadow: inset -1px -2px 82px -22px rgba(128,119,128,1);
+          
+
+        }
+        
+
+
+
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./main.js">
+   
+</script>
+     </head>
+     <body>
+        <div></div>
+        <header>
+<div></div>
+        </header>
+        <main>
+<section class="card-design">
+    <div class="card-parent">
+        <div class="card-title"><b>STARTER</b></div>
+        
+        <div class="card-price"> <b>$ 399</b></div>
+        <div class="card-text">per month.That's just $13 per meal </div>
+        <ul>
+            
+            
+            <li> <ion-icon class="icons" name="checkmark-outline" ></ion-icon> 1 meal per day </li><br>
+            <li><ion-icon class="icons" name="checkmark-outline"></ion-icon> order from 11 am to 12 pm</li>
+            <br>
+            <li><ion-icon class="icons" name="checkmark-outline"></ion-icon>delivery is free</li>
+            <br>
+            <li ></li><ion-icon  class="icons" name="close-outline"></ion-icon></li>
+        </ul>
+        <div class="card-button"></div>
+        <div class="card-button-text">Start eating well</div>
+        <div class="card-tag"><b>BEST VALUE</b></div>
+        
+
+    </div>
+    <div class="card-parent">
+        <div class="card-title"><b>COMPLETE</b></div>
+        
+        <div class="card-price"> <b>$ 649</b></div>
+        <div class="card-text">per month.That's just $11 per meal </div>
+        <ul>
+            <li><ion-icon  class="icons" name="checkmark-outline"></ion-icon> 2 mealS per day </li><br>
+            <li><ion-icon class="icons" name="checkmark-outline"></ion-icon>order 24/7</li>
+            <br>
+            <li><ion-icon class="icons" name="checkmark-outline"></ion-icon>delivery is free</li>
+            <br>
+            <li><ion-icon class="icons" name="checkmark-outline"></ion-icon>Get access to the latest recipes</li>
+        </ul>
+        <div class="card-button"></div>
+        <div class="card-button-text">Start eating well</div>
+        <div class="card-tag"><b>BEST VALUE</b></div>
+    </div>
+</section>
+        
+        </main>
+        <footer>
+
+        </footer>
+     </body>
+</html>

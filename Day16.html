@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .outer-layout {
+            background: linear-gradient(90deg, rgb(82, 86, 114) 0%, rgb(140, 192, 177) 50%, rgb(47, 77, 74) 100%);
+            padding: 30px;
+            border-radius: 20px;
+        }
+        header {
+            color: #000;
+            background-color: rgb(231, 215, 229);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+            
+        }
+        .header-img {
+            border-radius: 45px;
+
+        }
+        .image {
+            padding: 30px 5px;
+           
+        }
+        .button {
+            color: rgb(136, 93, 36);
+            background-color: rgb(182, 199, 193);
+            padding: 5px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .griditem {
+          border-radius: 10px;
+            background-color: cornflowerblue;  
+        }
+        .item1 {
+            grid-row: span 2;
+        }
+        .item2 {
+            grid-column: span 2;
+        }
+        .item3 {
+            grid-row: span 2;
+        }
+        .gridimage {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-layout">
+        <header>
+
+            <img class="header-img" style="width: 35px; height: 35px; object-fit: cover;"
+                src="./assets/images/mcdlogo.png" alt="mcdlogo">
+            <div class="contents">
+                <button class=" button Home">Home</button>
+                <button class=" button About">About</button>
+
+            </div>
+        </header>
+
+        <img class="image" style=" width: 100% ; height: 80vh; object-fit: contain;" src="./assets/images/pic1.avif" alt="books view">
+        <div class="grid-container">
+            <div class="griditem item1">
+                <img class="gridimage img1" src="./assets/images/pic3.jpg">
+            </div>
+            <div class="griditem item2">
+                <img class="gridimage img2" src="./assets/images/pic4.jpg">
+            </div>
+            <div class="griditem item3">
+                <img class="gridimage img3" src="./assets/images/pic5.jpg">
+            </div>
+            <div class="griditem item4">
+                <img class="gridimage img4" src="./assets/images/pic6.jpg">
+            </div>
+            <div class="griditem item5">
+                <img class="gridimage img5" src="./assets/images/pic7.jpg">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

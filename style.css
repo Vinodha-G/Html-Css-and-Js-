@@ -1,0 +1,33 @@
+* {
+    background-color: rgb(218, 203, 203);
+}
+
+p {
+    color: aqua;
+}
+
+.maintext {
+    color: blueviolet;
+}
+.author{
+    color: aqua;
+}
+#id{
+color: rgba(26, 14, 2, 0.2);
+  /* background-color: rgb(23, 24, 22);  */
+  text-shadow: 10; 
+  border: 2px solid red;
+  padding: 10px ;
+}
+#id1{
+    color: blueviolet
+    ;
+}
+#id3{
+    background-color: rgb(23, 26, 25);
+}
+.authortransperency{
+    color: rgb(235, 77, 108);
+    font-size: 20px;
+    
+}

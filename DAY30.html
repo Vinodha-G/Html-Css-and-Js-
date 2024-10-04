@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Day 30
+    </title>
+    <style>
+        .box {
+            width: 200px;
+            height: 300px;
+            padding: 10px;
+            background-color: burlywood;
+        }
+
+        .dragImage {
+            width: 200px;
+            height: 300px;
+           
+        }
+        #text{
+            font-size: 20px;
+        }
+    </style>
+
+    <!-- // for jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <button onclick="webStorage()">click here to store data</button>
+        <button onclick="webStorage1()">click here to store data in local storage</button>
+        <button onclick="webStorage2()">click here to get the data from local storage</button>
+        <button onclick="removeData()">click here to removeData data</button>
+        <button onclick="clearData()">click here to clear data</button>
+        <button onclick="lengthOfData()">click here to check the length of the stored data</button>
+        <button onclick="bringStoredData()">Click here to bring stored data</button>
+        <button onclick="storedData()">stored data</button>
+        <br>
+        <br>
+        <br>
+
+        <button onclick="fetchData()">Fetch Data from link</button>
+        <button onclick="fetchData2()">Fetch Data 2 from link</button>
+        <p id="text"></p>
+
+         <button onclick="webStorages()">webStorage from link</button>
+ 
+    </main>
+    <footer>
+        
+
+          <!-- geolocation -->
+        <button onclick="location1()">click here for location</button>
+
+
+<!-- drag and drop -->
+
+        <div class="box" ondragover="allowDrop(event)" ondrop="drop(event)">
+
+        </div>
+        <img src="./assets/images/pic2.jpg" alt="image" id="imagetag" draggable="true" ondrag="drag(event)"
+            class="dragImage">
+
+
+    </footer>
+
+    <!-- //jquery -->
+    <p class="jquery" id="jquery1" >Hello</p>
+
+    <script src="./Day30.js">
+
+    </script>
+
+</body>
+
+</html>

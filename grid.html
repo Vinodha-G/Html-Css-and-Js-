@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>gridpage</title>
+  <style>
+   
+
+    .gridcontainer {
+
+      padding: 20px;
+      /* background-color: rgb(126, 148, 148); */
+      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .box {
+      text-align: center;
+      padding: 50px;
+      color: rgb(255, 255, 255);
+
+      background-color: rgb(202, 101, 101);
+
+
+    }
+
+    .grid-item1 {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: 1fr  1fr;
+      gap: 5px;
+      border: 2px solid black;
+      padding: 5px;
+
+    }
+
+    .one {
+      background-color: aqua;
+    }
+
+    .gc1 {
+    justify-content: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+      gap: 5px;
+      border: 2px solid rgb(255, 255, 255);
+      padding: 15px;
+      background-color: aquamarine;
+      color: black;
+      margin: 5px;
+     
+    }
+    
+  </style>
+  <script>
+
+  </script>
+</head>
+
+<body>
+  <div class="gridcontainer">
+    <div class="grid-item1">
+      <div class="box one">C1</div>
+      <div class="box two">C2</div>
+      <div class="box three">C3</div>
+      <div class="box four">C4</div>
+      <div class="box five">
+        <div class="gc1">gc1</div>
+        <div class="gc1">gc1</div>
+        <div class="gc1">gc1</div>
+        <div class="gc1">gc1</div>
+        <div class="gc1">gc1</div>
+      </div>
+
+    </div>
+    <!-- <div class="box five">5</div> -->
+    <div class="box six">6</div>
+    <div class="box seven">7</div>
+    <div class="box eight">8</div>
+    <div class="box nine">9</div>
+    <div class="box ten">10</div>
+  </div>
+
+</body>
+
+</html>
